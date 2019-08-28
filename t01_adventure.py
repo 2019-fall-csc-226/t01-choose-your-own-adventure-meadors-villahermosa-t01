@@ -70,6 +70,11 @@ if dead == True:
 
 
 
+print("You are in a room with strange symbols all over the walls.")
+print("You see an amulet floating in the middle of the room.")
+print("What do do?")
+
+
 # TODO Don't forget to check if your user is dead at the end of your chapter!
 
 
