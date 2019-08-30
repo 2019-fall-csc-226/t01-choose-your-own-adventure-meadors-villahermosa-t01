@@ -92,7 +92,7 @@ if amuletAction == "Wear":
 
     print()
     print("You're body is under new management at the moment.")
-    print("The walls begin to morph, forming words you can comprehend.")
+    print("The walls begin to morph, forming words you can comprehend, requesting a number.")
     amuletSave = input("What is The Ultimate Answer to Life, The Universe and Everything?")
 
     if int(amuletSave) == 42:
