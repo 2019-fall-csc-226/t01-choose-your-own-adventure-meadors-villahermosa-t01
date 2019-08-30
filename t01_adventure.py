@@ -66,42 +66,81 @@ if dead == True:
     quit()
 
 #########################################################################################################
-# TODO Add your part of the story here. Keep in mind you may NOT be coming right after the example above.
 
-action = input("What do you want to do? [Put it on/Ignore it/Burn it]" )
+#Beginning of the Amulet Encounter Chapter
 
+print()
 print("You are in a room with strange symbols all over the walls.")
-print("You see an amulet floating in the middle of the room.")
+print("Looking at the eldritch markings makes your head hurt just looking at them.")
+print("You see an amulet floating in the middle of the room over a pedestal.")
+print()
 
-if action == "Put it on":
+amuletAction = input("What do you want to do? [Wear/Ignore/Destroy]" )
+
+print()
+
+if amuletAction == "Wear":
     # Bad choice
     print("Nothing happens... ")
-    sleep(delay * 5)
+    sleep(delay * 3)
     print("...")
-    sleep(delay * 5)
+    sleep(delay * 3)
     print("You feel strange, your hands starts twitching uncontrollably.")
     print("You start walking back into the darkness, not in control of your own actions.")
-    print("Congratulations! You've been possessed!")
-    print("Don't mess with cursed objects kids!")
 
-    dead = True
+    #Begin Test of Wills
 
-elif action == "Burn it":
+    print()
+    print("You're body is under new management at the moment.")
+    print("The walls begin to morph, forming words you can comprehend.")
+    amuletSave = input("What is The Ultimate Answer to Life, The Universe and Everything?")
+
+    if int(amuletSave) == 42:
+        print()
+        print("Your body starts responding again.")
+        print("You seem to have shaken off the evil manipulation.")
+        print("Harrowed by your brush with death, you carry on, deeper into the labyrinth")
+    elif int(amuletSave) >= 41 and int(amuletSave) <= 43:
+        print()
+        print("Close enough!")
+        print("You shake off the control with moments to spare and come to your senses.")
+        print("You twitch one last time and run for you life, towards (unlikely) safety...")
+    else:
+        print("INCORRECT MORTAL!!!")
+        print("NOW DIE FOR YOUR IGNORANCE!")
+
+elif amuletAction == "Destroy":
     # Good option
-    print("As you cast the amulet into the lava, you feel watched by a giant eye.")
+    print("As you cast the amulet into some previously un-narrated lava, you feel watched by a giant eye.")
     print("As the amulet disintegrated, you feel a cursed being lifted from the Median-Earth.")
+    print("Satisfied with your good deed for the day you carry on deeper into the labyrinth...")
+    print()
 
 
-else:
+elif amuletAction == "Ignore":
     # Boring option
     print("So you ignore the floating mystical artifact in the middle of the room.")
-    print("We went through all of the trouble in making a cool, floating item for you to use and you ignore it...")
-    print("Way to go, you hurt our self-esteem.")
-    print("We guess you can carry on, further deeper into the depths of the labyrinth.")
+    print("We went through all of the trouble in making a cool, levitating, magic item for you and you ignore it...")
+    print("Way to go, you hurt our creative pride.")
+    print("Well, I guess you can carry on, further deeper into the depths of the labyrinth...")
+    print("Away from anything fun...")
+    print()
 
-# TODO Don't forget to check if your user is dead at the end of your chapter!
+else:
+    #Just in case option
+    print("Somehow, our scenario wasn't interesting enough for you to even answer properly.")
+    print("Whatever you just did somehow broke the laws of causality and you glitch")
+    print("through a lamp using a backwards long jump and end up in a parallel dimension in another room...")
+    print()
 
+if dead == True:
+    print("Congratulations! You've been possessed by an ancient evil!")
+    print("Don't mess with cursed objects kids!")
+    print("Better luck next time! Try again by hitting the green play button in the top right. ")
+    quit()
 
+print()
+print()
 #########################################################################################################
 
 # The following is the end of the story. Don't change this section, unless you really want to
