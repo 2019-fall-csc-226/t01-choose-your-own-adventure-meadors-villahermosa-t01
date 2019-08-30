@@ -71,7 +71,7 @@ if dead == True:
 
 print()
 print("You are in a room with strange symbols all over the walls.")
-print("Looking at the eldritch markings makes your head hurt just looking at them.")
+print("Looking at the eldritch markings makes your head hurt just by looking at them.")
 print("You see an amulet floating in the middle of the room over a pedestal.")
 print()
 
