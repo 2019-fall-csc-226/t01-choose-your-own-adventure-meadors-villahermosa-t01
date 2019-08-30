@@ -108,6 +108,7 @@ if amuletAction == "Wear":
     else:
         print("INCORRECT MORTAL!!!")
         print("NOW DIE FOR YOUR IGNORANCE!")
+        dead = True
 
 elif amuletAction == "Destroy":
     # Good option
